@@ -69,3 +69,18 @@ section[class="goals-container"] select:focus {
     transform: translateY(-2px);
     box-shadow: 0 5px 10px 0 rgb(76, 133, 255);
 }
+
+/* Percentuale nella barra di progresso */
+.progress-section>.progress-bar> {
+    position: relative;
+}
+
+.progress-section>.progress-bar>.progress-fill::after {
+    content: "65%";
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    top: 0;
+    right: 10px;
+    translate: 0 -10%;
+}
