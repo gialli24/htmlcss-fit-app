@@ -1,0 +1,6 @@
+/* 🔥 Icona fuoco nella prima stat card */
+
+.stats-container>.stats-grid:first-child::before {
+    content: '🔥';
+    font-size: 24px;
+}
