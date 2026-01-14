@@ -1,3 +1,18 @@
+/* Variables */
+:root {
+    --color-purple: #667eea;
+    --color-pink: #764ba2;
+    --color-white: white;
+    --color-black-transparent: rgba(0, 0, 0, 0.5);
+    --color-black: black;
+    --color-light-yellow: #fff1a1;
+    --color-yellow: #f39c12;
+    --color-light-green: #eafff3;
+    --color-green: #2ecc71;
+    --color-bg-light-gray: #364f66;
+    --color-blue: rgb(76, 133, 255);
+}
+
 /* 🔥 Icona fuoco nella prima stat card */
 
 .stats-container>.stats-grid:first-child::before {
@@ -8,13 +23,13 @@
 /* Evidenziare la terza stat card */
 
 .stats-container>.stats-grid:last-child {
-    background-image: linear-gradient(to bottom right, #667eea, #764ba2);
-    color: white;
+    background-image: linear-gradient(to bottom right, var(--color-purple), var(--color-pink));
+    color: var(--color-white);
 }
 
 .stats-container>.stats-grid:last-child>.stat-number,
 .stats-container>.stats-grid:last-child>.stat-label {
-    color: white;
+    color: var(--color-white);
 }
 
 /* Effetto hover sulle stat cards */
@@ -24,21 +39,21 @@
 
 .stats-container>.stats-grid:hover {
     transform: translateY(-5px);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px 0 var(--color-black-transparent);
 }
 
 /* Evidenziare il secondo piano allenamento */
 .workout-section>.workout-plan:nth-of-type(2) {
-    background-color: #fff1a1;
-    border-left: 5px solid #f39c12;
+    background-color: var(--color-light-yellow);
+    border-left: 5px solid var(--color-yellow);
 }
 
 /* Bordi verdi per primo e ultimo esercizio */
 
 div[style="margin: 0 20px;"]>.exercise-item:first-child,
 div[style="margin: 0 20px;"]>.exercise-item:last-child {
-    background-color: #eafff3;
-    border-left: 5px solid #2ecc71;
+    background-color: var(--color-light-green);
+    border-left: 5px solid var(--color-green);
 }
 
 /* Icona fulmine negli esercizi pari */
@@ -55,8 +70,8 @@ section[class="goals-container"] select {
 
 section[class="goals-container"] input:focus,
 section[class="goals-container"] select:focus {
-    border: 1px solid rgb(76, 133, 255);
-    box-shadow: 0 2px 10px 0 rgb(76, 133, 255);
+    border: 1px solid var(--color-blue);
+    box-shadow: 0 2px 10px 0 var(--color-blue);
 }
 
 /* Miglioramenti al button */
@@ -65,9 +80,9 @@ section[class="goals-container"] select:focus {
 }
 
 .save-btn:hover {
-    background-color: rgb(76, 133, 255);
+    background-color: var(--color-blue);
     transform: translateY(-2px);
-    box-shadow: 0 5px 10px 0 rgb(76, 133, 255);
+    box-shadow: 0 5px 10px 0 var(--color-blue);
 }
 
 /* Percentuale nella barra di progresso */
@@ -78,7 +93,7 @@ section[class="goals-container"] select:focus {
 .progress-section>.progress-bar>.progress-fill::after {
     content: "65%";
     position: absolute;
-    color: white;
+    color: var(--color-white);
     font-size: 10px;
     top: 0;
     right: 10px;
@@ -87,13 +102,13 @@ section[class="goals-container"] select:focus {
 
 /* Migliorie alla navigazione */
 nav>a[href="#home"] {
-    color: rgb(76, 133, 255);
+    color: var(--color-blue);
     background-color: #364f66;
 }
 
 .nav-footer>.nav-item:hover {
-    color: rgb(76, 133, 255);
-    background-color: #364f66;
+    color: var(--color-blue);
+    background-color: var(--color-bg-light-gray);
 }
 
 /* Virgolette alla citazione */
