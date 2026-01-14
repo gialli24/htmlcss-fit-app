@@ -4,3 +4,15 @@
     content: '🔥';
     font-size: 24px;
 }
+
+/* Evidenziare la terza stat card */
+
+.stats-container>.stats-grid:last-child {
+    background-image: linear-gradient(to bottom right, #6077DB, #764CA2);
+    color: white;
+}
+
+.stats-container>.stats-grid:last-child>.stat-number,
+.stats-container>.stats-grid:last-child>.stat-label {
+    color: white;
+}
