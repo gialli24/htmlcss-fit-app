@@ -84,3 +84,14 @@ section[class="goals-container"] select:focus {
     right: 10px;
     translate: 0 -10%;
 }
+
+/* Migliorie alla navigazione */
+nav>a[href="#home"] {
+    color: rgb(76, 133, 255);
+    background-color: #364f66;
+}
+
+.nav-footer>.nav-item:hover {
+    color: rgb(76, 133, 255);
+    background-color: #364f66;
+}
