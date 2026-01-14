@@ -95,3 +95,10 @@ nav>a[href="#home"] {
     color: rgb(76, 133, 255);
     background-color: #364f66;
 }
+
+/* Virgolette alla citazione */
+
+.quote-box>p::after,
+.quote-box>p::before {
+    content: "\"";
+}
