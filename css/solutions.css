@@ -8,7 +8,7 @@
 /* Evidenziare la terza stat card */
 
 .stats-container>.stats-grid:last-child {
-    background-image: linear-gradient(to bottom right, #6077DB, #764CA2);
+    background-image: linear-gradient(to bottom right, #667eea, #764ba2);
     color: white;
 }
 
@@ -31,5 +31,13 @@
 /* Evidenziare il secondo piano allenamento */
 .workout-section>.workout-plan:nth-of-type(2) {
     background-color: #fff1a1;
-    border-left: 5px solid #F39C12;
+    border-left: 5px solid #f39c12;
+}
+
+/* Bordi verdi per primo e ultimo esercizio */
+
+div[style="margin: 0 20px;"]>.exercise-item:first-child,
+div[style="margin: 0 20px;"]>.exercise-item:last-child {
+    background-color: #eafff3;
+    border-left: 5px solid #2ecc71;
 }
