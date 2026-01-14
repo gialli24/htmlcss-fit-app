@@ -41,3 +41,8 @@ div[style="margin: 0 20px;"]>.exercise-item:last-child {
     background-color: #eafff3;
     border-left: 5px solid #2ecc71;
 }
+
+/* Icona fulmine negli esercizi pari */
+div[style="margin: 0 20px;"]>.exercise-item:nth-child(even)::before {
+    content: '⚡';
+}
